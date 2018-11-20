@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="app_background">#1c1a28</color>
+
+    <color name="primary_text_color">#fff</color>
+    <color name="secondary_text_color">#99ffffff</color>
+
+    <color name="separator">#99ffffff</color>
+    <color name="divider">#ccffffff</color>
+
+    <color name="marker_regular">#2663c6</color>
+    <color name="marker_selected">#3e8c26</color>
+
+    <color name="appGreenColor">#30bc1f</color>
+    <color name="appOrangeColor">#ffad33</color>
+    <color name="appBlueColor">#0960ff</color>
+    <color name="appRedColor">#ba3233</color>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="switch_fragments_button_padding">8dp</dimen>
+    <dimen name="switch_fragments_button_height">50dp</dimen>
+    <dimen name="switch_fragments_button_icon_size">32dp</dimen>
+
+    <dimen name="text_size_title">18sp</dimen>
+    <dimen name="text_size_subtitle">16sp</dimen>
+    <dimen name="vehicle_list_item_padding_vertical">16dp</dimen>
+    <dimen name="vehicle_list_item_padding_horizontal">8dp</dimen>
+    <dimen name="vehicle_list_item_icon_size">32dp</dimen>
+    <dimen name="map_padding">10dp</dimen>
+</resources>
