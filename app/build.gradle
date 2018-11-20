@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion buildVersions.compileSdk
     defaultConfig {
-        applicationId "com.chaplin.test1"
+        applicationId "com.chaplin.test2"
         minSdkVersion buildVersions.minSdk
         targetSdkVersion buildVersions.targetSdk
         versionCode 1
