@@ -1,7 +1,7 @@
 package com.chaplin.test2.ui.vehicles.viewmodel;
 
-import com.chaplin.test1.domain.model.Vehicle;
-import com.chaplin.test1.domain.usecase.GetVehiclesUseCase;
+import com.chaplin.test2.domain.model.Vehicle;
+import com.chaplin.test2.domain.usecase.GetVehiclesUseCase;
 import com.chaplin.test2.core.model.VehicleModel;
 import com.chaplin.test2.core.model.mapper.VehicleModelMapper;
 

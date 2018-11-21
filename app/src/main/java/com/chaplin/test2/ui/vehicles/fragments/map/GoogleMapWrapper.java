@@ -2,8 +2,8 @@ package com.chaplin.test2.ui.vehicles.fragments.map;
 
 import android.content.res.Resources;
 import androidx.annotation.NonNull;
-import com.chaplin.test1.R;
-import com.chaplin.test1.core.model.VehicleModel;
+import com.chaplin.test2.R;
+import com.chaplin.test2.core.model.VehicleModel;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.UiSettings;

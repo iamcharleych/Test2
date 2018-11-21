@@ -1,14 +1,13 @@
 package com.chaplin.test2.core.di.module;
 
-import com.chaplin.test1.core.pref.Prefs;
-import com.chaplin.test1.data.db.AppDatabase;
-import com.chaplin.test1.data.entity.mapper.VehicleEntityMapper;
-import com.chaplin.test1.data.networking.core.DataResponse;
-import com.chaplin.test1.data.networking.core.RestClient;
-import com.chaplin.test1.data.repository.VehiclesRepositoryImpl;
-import com.chaplin.test1.data.repository.datasource.VehiclesDataSourceFactory;
-import com.chaplin.test1.domain.repository.VehiclesRepository;
 import com.chaplin.test2.core.pref.Prefs;
+import com.chaplin.test2.data.db.AppDatabase;
+import com.chaplin.test2.data.entity.mapper.VehicleEntityMapper;
+import com.chaplin.test2.data.networking.core.DataResponse;
+import com.chaplin.test2.data.networking.core.RestClient;
+import com.chaplin.test2.data.repository.VehiclesRepositoryImpl;
+import com.chaplin.test2.data.repository.datasource.VehiclesDataSourceFactory;
+import com.chaplin.test2.domain.repository.VehiclesRepository;
 
 import dagger.Module;
 import dagger.Provides;

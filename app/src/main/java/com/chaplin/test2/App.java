@@ -2,8 +2,8 @@ package com.chaplin.test2;
 
 import android.app.Activity;
 import android.app.Application;
-import com.chaplin.test1.common.pref.PrefsContext;
-import com.chaplin.test1.core.di.component.DaggerAppComponent;
+import com.chaplin.test2.common.pref.PrefsContext;
+import com.chaplin.test2.core.di.component.DaggerAppComponent;
 import dagger.android.AndroidInjector;
 import dagger.android.DispatchingAndroidInjector;
 import dagger.android.HasActivityInjector;

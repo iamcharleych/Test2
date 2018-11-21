@@ -5,9 +5,7 @@ import android.view.ViewGroup;
 import androidx.annotation.LayoutRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import com.chaplin.test1.ui.adapters.binders.CompositeViewBinder;
-import com.chaplin.test1.ui.vehicles.fragments.listing.adapter.binder.VehicleSubtitleViewBinder;
-import com.chaplin.test1.ui.vehicles.fragments.listing.adapter.binder.VehicleTitleViewBinder;
+import com.chaplin.test2.ui.adapters.binders.CompositeViewBinder;
 import com.chaplin.test2.ui.vehicles.fragments.listing.adapter.binder.VehicleSubtitleViewBinder;
 import com.chaplin.test2.ui.vehicles.fragments.listing.adapter.binder.VehicleTitleViewBinder;
 

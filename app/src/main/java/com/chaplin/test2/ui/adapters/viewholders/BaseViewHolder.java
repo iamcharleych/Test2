@@ -3,9 +3,8 @@ package com.chaplin.test2.ui.adapters.viewholders;
 import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-import com.chaplin.test1.ui.adapters.binders.BaseViewBinder;
-import com.chaplin.test1.ui.adapters.binders.BaseViewBinderItem;
 import com.chaplin.test2.ui.adapters.binders.BaseViewBinder;
+import com.chaplin.test2.ui.adapters.binders.BaseViewBinderItem;
 
 public abstract class BaseViewHolder<T extends BaseViewBinderItem, B extends BaseViewBinder<T>> extends RecyclerView.ViewHolder {
 

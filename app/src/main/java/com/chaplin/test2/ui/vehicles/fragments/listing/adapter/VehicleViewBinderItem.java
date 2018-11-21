@@ -1,8 +1,8 @@
 package com.chaplin.test2.ui.vehicles.fragments.listing.adapter;
 
 import androidx.annotation.NonNull;
-import com.chaplin.test1.core.model.VehicleModel;
-import com.chaplin.test1.ui.adapters.binders.BaseViewBinderItem;
+import com.chaplin.test2.core.model.VehicleModel;
+import com.chaplin.test2.ui.adapters.binders.BaseViewBinderItem;
 
 public class VehicleViewBinderItem extends BaseViewBinderItem<VehicleModel> {
 

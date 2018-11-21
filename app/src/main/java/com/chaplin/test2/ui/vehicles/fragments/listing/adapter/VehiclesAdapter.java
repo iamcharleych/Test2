@@ -6,7 +6,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
-import com.chaplin.test1.core.model.VehicleModel;
+import com.chaplin.test2.core.model.VehicleModel;
 
 import java.util.List;
 

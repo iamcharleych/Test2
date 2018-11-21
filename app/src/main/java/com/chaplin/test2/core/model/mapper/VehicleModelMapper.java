@@ -1,9 +1,8 @@
 package com.chaplin.test2.core.model.mapper;
 
-import com.chaplin.test1.core.model.VehicleModel;
-import com.chaplin.test1.domain.model.Coordinate;
-import com.chaplin.test1.domain.model.Vehicle;
 import com.chaplin.test2.core.model.VehicleModel;
+import com.chaplin.test2.domain.model.Coordinate;
+import com.chaplin.test2.domain.model.Vehicle;
 import com.google.android.gms.maps.model.LatLng;
 
 import java.util.ArrayList;

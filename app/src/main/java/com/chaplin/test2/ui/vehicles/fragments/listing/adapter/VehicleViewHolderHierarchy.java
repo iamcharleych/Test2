@@ -6,7 +6,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import androidx.annotation.LayoutRes;
 import androidx.annotation.NonNull;
-import com.chaplin.test1.R;
+import com.chaplin.test2.R;
 
 /* package */ class VehicleViewHolderHierarchy {
 

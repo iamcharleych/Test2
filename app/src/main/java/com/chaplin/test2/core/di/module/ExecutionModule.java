@@ -1,6 +1,6 @@
 package com.chaplin.test2.core.di.module;
 
-import com.chaplin.test1.domain.execution.ExecutionThread;
+import com.chaplin.test2.domain.execution.ExecutionThread;
 
 import javax.inject.Named;
 

@@ -1,8 +1,7 @@
 package com.chaplin.test2.core.di.component;
 
-import com.chaplin.test1.App;
-import com.chaplin.test1.core.di.module.AppModule;
 import com.chaplin.test2.App;
+import com.chaplin.test2.core.di.module.AppModule;
 
 import dagger.BindsInstance;
 import dagger.Component;

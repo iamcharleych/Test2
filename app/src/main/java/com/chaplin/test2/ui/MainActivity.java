@@ -4,9 +4,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-import com.chaplin.test1.R;
-import com.chaplin.test1.ui.vehicles.fragments.listing.ListingFragment;
-import com.chaplin.test1.ui.view.TintableButton;
+import com.chaplin.test2.R;
 import com.chaplin.test2.ui.vehicles.fragments.listing.ListingFragment;
 import com.chaplin.test2.ui.view.TintableButton;
 

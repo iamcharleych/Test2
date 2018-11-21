@@ -1,6 +1,6 @@
 package com.chaplin.test2.core.pref;
 
-import com.chaplin.test1.common.pref.LongPref;
+import com.chaplin.test2.common.pref.LongPref;
 
 public class Prefs {
 

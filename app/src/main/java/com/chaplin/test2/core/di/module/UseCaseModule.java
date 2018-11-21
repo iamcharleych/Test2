@@ -1,8 +1,8 @@
 package com.chaplin.test2.core.di.module;
 
-import com.chaplin.test1.domain.execution.ExecutionThread;
-import com.chaplin.test1.domain.repository.VehiclesRepository;
-import com.chaplin.test1.domain.usecase.GetVehiclesUseCase;
+import com.chaplin.test2.domain.execution.ExecutionThread;
+import com.chaplin.test2.domain.repository.VehiclesRepository;
+import com.chaplin.test2.domain.usecase.GetVehiclesUseCase;
 import com.chaplin.test2.core.model.mapper.VehicleModelMapper;
 
 import javax.inject.Named;

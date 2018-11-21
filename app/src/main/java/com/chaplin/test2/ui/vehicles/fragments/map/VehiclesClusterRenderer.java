@@ -2,7 +2,7 @@ package com.chaplin.test2.ui.vehicles.fragments.map;
 
 import android.content.Context;
 import android.graphics.Bitmap;
-import com.chaplin.test1.core.model.VehicleModel;
+import com.chaplin.test2.core.model.VehicleModel;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.MarkerOptions;

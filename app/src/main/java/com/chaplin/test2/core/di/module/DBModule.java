@@ -1,9 +1,8 @@
 package com.chaplin.test2.core.di.module;
 
 import androidx.room.Room;
-import com.chaplin.test1.App;
-import com.chaplin.test1.data.db.AppDatabase;
 import com.chaplin.test2.App;
+import com.chaplin.test2.data.db.AppDatabase;
 
 import dagger.Module;
 import dagger.Provides;

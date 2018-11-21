@@ -1,15 +1,14 @@
 package com.chaplin.test2.core.di.module;
 
-import com.chaplin.test1.App;
-import com.chaplin.test1.BuildConfig;
-import com.chaplin.test1.data.entity.VehicleEntity;
-import com.chaplin.test1.data.entity.serializer.VehicleEntityListSerializer;
-import com.chaplin.test1.data.entity.serializer.VehicleEntitySerializer;
-import com.chaplin.test1.data.networking.client.RetrofitRestClient;
-import com.chaplin.test1.data.networking.client.RxErrorHandlingCallAdapterFactory;
-import com.chaplin.test1.data.networking.core.DataResponse;
-import com.chaplin.test1.data.networking.core.RestClient;
 import com.chaplin.test2.App;
+import com.chaplin.test2.BuildConfig;
+import com.chaplin.test2.data.entity.VehicleEntity;
+import com.chaplin.test2.data.entity.serializer.VehicleEntityListSerializer;
+import com.chaplin.test2.data.entity.serializer.VehicleEntitySerializer;
+import com.chaplin.test2.data.networking.client.RetrofitRestClient;
+import com.chaplin.test2.data.networking.client.RxErrorHandlingCallAdapterFactory;
+import com.chaplin.test2.data.networking.core.DataResponse;
+import com.chaplin.test2.data.networking.core.RestClient;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;

@@ -2,9 +2,9 @@ package com.chaplin.test2.ui.vehicles.fragments.listing.adapter.binder;
 
 import android.widget.TextView;
 import androidx.annotation.NonNull;
-import com.chaplin.test1.core.model.VehicleModel;
-import com.chaplin.test1.ui.adapters.binders.BaseViewBinder;
-import com.chaplin.test1.ui.vehicles.fragments.listing.adapter.VehicleViewBinderItem;
+import com.chaplin.test2.core.model.VehicleModel;
+import com.chaplin.test2.ui.adapters.binders.BaseViewBinder;
+import com.chaplin.test2.ui.vehicles.fragments.listing.adapter.VehicleViewBinderItem;
 
 public class VehicleSubtitleViewBinder extends BaseViewBinder<VehicleViewBinderItem> {
 

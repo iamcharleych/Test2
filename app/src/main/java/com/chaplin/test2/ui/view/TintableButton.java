@@ -6,7 +6,7 @@ import android.content.res.TypedArray;
 import android.graphics.Color;
 import android.util.AttributeSet;
 import androidx.appcompat.widget.AppCompatImageView;
-import com.chaplin.test1.R;
+import com.chaplin.test2.R;
 
 public class TintableButton extends AppCompatImageView {
 

@@ -3,8 +3,8 @@ package com.chaplin.test2.ui.vehicles.fragments.listing.adapter;
 import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import com.chaplin.test1.ui.adapters.binders.BaseViewBinder;
-import com.chaplin.test1.ui.adapters.viewholders.BaseViewHolder;
+import com.chaplin.test2.ui.adapters.binders.BaseViewBinder;
+import com.chaplin.test2.ui.adapters.viewholders.BaseViewHolder;
 
 /* package */ class VehicleViewHolder
         extends BaseViewHolder<VehicleViewBinderItem, BaseViewBinder<VehicleViewBinderItem>> {
