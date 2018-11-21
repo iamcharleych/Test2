@@ -1,21 +1,20 @@
 package com.chaplin.test2.ui.vehicles.viewmodel;
 
+import com.chaplin.test1.domain.model.Vehicle;
+import com.chaplin.test1.domain.usecase.GetVehiclesUseCase;
+import com.chaplin.test2.core.model.VehicleModel;
+import com.chaplin.test2.core.model.mapper.VehicleModelMapper;
+
+import org.reactivestreams.Subscription;
+
+import java.util.List;
+
 import androidx.annotation.NonNull;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelProvider;
-import com.chaplin.test1.core.model.VehicleModel;
-import com.chaplin.test1.core.model.mapper.VehicleModelMapper;
-import com.chaplin.test1.domain.model.Vehicle;
-import com.chaplin.test1.domain.usecase.GetVehiclesUseCase;
-import io.reactivex.Flowable;
-import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.CompositeDisposable;
-import io.reactivex.disposables.Disposable;
-import io.reactivex.schedulers.Schedulers;
-
-import java.util.List;
 
 public class VehiclesViewModel extends ViewModel {
 
@@ -59,26 +58,7 @@ public class VehiclesViewModel extends ViewModel {
     }
 
     public void getVehicles() {
-        final Disposable subscription = Flowable.fromCallable(() -> {
-            List<Vehicle> vehicles = mGetVehiclesUseCase.execute(null);
-            return mMapper.map(vehicles);
-        })
-        .doOnSubscribe(s -> mVehiclesLiveData.postValue(VehiclesViewState.loading()))
-        .doOnError(throwable -> {
-            mVehiclesLiveData.postValue(VehiclesViewState.error(throwable));
-            mVehiclesLiveData.postValue(VehiclesViewState.idle());
-        })
-        .subscribeOn(Schedulers.io())
-        .observeOn(AndroidSchedulers.mainThread())
-        .subscribe(
-                vehiclesList -> {
-                    disposeSubscriptions();
-                    mVehiclesLiveData.setValue(VehiclesViewState.success(vehiclesList));
-                },
-                throwable -> disposeSubscriptions()
-        );
-
-        mCompositeDisposable.add(subscription);
+        mGetVehiclesUseCase.execute(null, new VehiclesSubscriber());
     }
 
     public void selectVehicle(VehicleModel vehicle) {
@@ -101,6 +81,30 @@ public class VehiclesViewModel extends ViewModel {
         @Override
         public <T extends ViewModel> T create(@NonNull Class<T> modelClass) {
             return (T) new VehiclesViewModel(mGetVehiclesUseCase, mMapper);
+        }
+    }
+
+    private class VehiclesSubscriber implements org.reactivestreams.Subscriber<List<Vehicle>> {
+
+        @Override
+        public void onSubscribe(Subscription s) {
+            mVehiclesLiveData.postValue(VehiclesViewState.loading());
+        }
+
+        @Override
+        public void onNext(List<Vehicle> vehicles) {
+            mVehiclesLiveData.setValue(VehiclesViewState.success(mMapper.map(vehicles)));
+        }
+
+        @Override
+        public void onError(Throwable t) {
+            mVehiclesLiveData.postValue(VehiclesViewState.error(t));
+            mVehiclesLiveData.postValue(VehiclesViewState.idle());
+        }
+
+        @Override
+        public void onComplete() {
+            // no-op
         }
     }
 }

@@ -1,7 +1,5 @@
 package com.chaplin.test2.core.di.module;
 
-import com.chaplin.test1.core.di.scope.ActivityScope;
-import com.chaplin.test1.ui.MainActivity;
 import com.chaplin.test2.core.di.scope.ActivityScope;
 import com.chaplin.test2.ui.MainActivity;
 
@@ -10,6 +8,7 @@ import dagger.android.ContributesAndroidInjector;
 
 @Module(includes = {
         DBModule.class,
+        ExecutionModule.class,
         NetworkModule.class,
         RepositoryModule.class,
         UseCaseModule.class,

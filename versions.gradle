@@ -26,7 +26,7 @@ versions.mockitoAll = "1.10.19"
 versions.constraintLayout = "1.1.3"
 versions.glide = "4.8.0"
 versions.androidGradlePlugin = "3.2.1"
-versions.rxJava2 = "2.2.2"
+versions.rxJava = "2.2.2"
 versions.rxAndroid = "2.1.0"
 versions.androidTest = "1.1.0"
 versions.androidTestRules = "1.0.1"
@@ -145,6 +145,8 @@ deps.squareUp = squareUp
 
 // region Rx
 def rx = [:]
+rx.javaxInject = buildDependency('javax.inject', 'javax.inject', '1')
+rx.javaxAnnotation = buildDependency('javax.annotation', 'jsr250-api', '1.0')
 rx.java = buildDependency(packs.rx, 'rxjava', versions.rxJava)
 rx.android = buildDependency(packs.rx, 'rxandroid', versions.rxAndroid)
 deps.rx = rx

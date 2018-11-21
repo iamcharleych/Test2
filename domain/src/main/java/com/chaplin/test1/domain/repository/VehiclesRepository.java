@@ -4,7 +4,9 @@ import com.chaplin.test1.domain.model.Vehicle;
 
 import java.util.List;
 
+import io.reactivex.Flowable;
+
 public interface VehiclesRepository {
 
-    List<Vehicle> getVehicles();
+    Flowable<List<Vehicle>> getVehicles();
 }

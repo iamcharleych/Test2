@@ -1,6 +1,7 @@
 package com.chaplin.test2.ui.vehicles.viewmodel;
 
-import com.chaplin.test1.core.model.VehicleModel;
+
+import com.chaplin.test2.core.model.VehicleModel;
 
 import java.util.List;
 

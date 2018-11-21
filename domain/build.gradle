@@ -3,9 +3,14 @@ apply plugin: 'java'
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
+    // rx
+    implementation deps.rx.java
+    implementation deps.rx.javaxInject
+    implementation deps.rx.javaxAnnotation
+
     // test
     testImplementation deps.test.junit
 }
 
-sourceCompatibility = "7"
-targetCompatibility = "7"
+sourceCompatibility = "8"
+targetCompatibility = "8"
